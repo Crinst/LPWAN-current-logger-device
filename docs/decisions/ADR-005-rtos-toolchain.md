@@ -1,6 +1,6 @@
 # ADR-005: RTOS and toolchains
 
-**Status: OPEN — decision pending**
+**Status: DECIDED 2026-08-03 — Zephyr RTOS + west/CMake**
 **Implements in:** all next-gen branches
 
 ## Context
@@ -28,5 +28,18 @@
 
 ## Decision
 
-_(pending — can be decided piecemeal; sub-decision 4 is uncontroversial and will be
-applied to every ng branch unless vetoed)_
+**Zephyr RTOS with the west/CMake toolchain (VS Code editing, CI-able).**
+Rationale: the project's feature set maps 1:1 to Zephyr subsystems — shell (replaces
+the hand-rolled console menus), settings (replaces EEPROM handling), disk/FatFS
+(SDMMC), one networking stack covering BOTH ADR-003 paths (native `eth_stm32_hal` +
+`esp_at` ESP32 offload), integrated LVGL, logging. Future extension is cheap:
+display swap = devicetree + driver change; H743 fallback = mostly SoC/DT change.
+
+Accepted costs: custom board definition (devicetree) for the V3 board (reference:
+upstream `nucleo_f767zi`, same MCU), and three custom drivers to write —
+ADS8910/FPGA-link (SPI), ST7528 display (I2C), AD5259 digipot (I2C).
+
+Sub-decisions: FPGA toolchain = yosys/nextpnr-ice40 + iverilog/cocotb testbenches
+(per ADR-002); repo hygiene (.gitattributes LF, no artifacts) applies to all ng
+branches. Zephyr app lives on branch `ng` of `LPWAN_Current_Logger_FW_F7` as a
+west workspace application (board dir + app dir), keeping the branching model.
