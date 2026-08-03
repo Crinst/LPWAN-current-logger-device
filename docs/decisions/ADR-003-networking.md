@@ -1,6 +1,6 @@
 # ADR-003: Network connectivity
 
-**Status: OPEN — decision pending**
+**Status: DECIDED 2026-08-03 — Option C: both native Ethernet and ESP32**
 **Implements in:** firmware repo branch per ADR-001; board rev in this repo if ESP32 added
 
 ## Context
@@ -29,4 +29,9 @@ firmware is stable — the PHY is already on the board, nothing is lost by defer
 
 ## Decision
 
-_(pending)_
+**Option C — both from the start.** Native Ethernet on the V3 board's wired
+ETH+LAN8742 path and an ESP32 co-processor for WiFi/BLE. Note: this interacts with
+ADR-005 — if Zephyr is chosen, both come largely from one stack: Zephyr's native
+`eth_stm32_hal` driver plus the `esp_at` WiFi-offload driver (ESP32 running ESP-AT
+firmware over UART), sharing one IP stack, sockets API and shell. Implementation
+order: Ethernet first (no new hardware), ESP32 module second.

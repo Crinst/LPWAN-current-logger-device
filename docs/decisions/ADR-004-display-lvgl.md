@@ -1,6 +1,6 @@
 # ADR-004: Display and graphics stack
 
-**Status: OPEN — decision pending**
+**Status: DECIDED 2026-08-03 — Option B: keep ST7528 initially**
 **Implements in:** firmware repo branch per ADR-001; board rev in this repo
 
 ## Context
@@ -30,4 +30,9 @@ revisit **C** only if ADR-001 lands on the H745 respin.
 
 ## Decision
 
-_(pending)_
+**Option B — keep the ST7528 160×100 mono LCD for the first next-gen release.**
+Zero hardware change; UI effort goes into structure, not pixels. The 320×240 SPI
+TFT (Option A) stays the target for a later iteration — SPI4 + spare GPIOs remain
+reserved for it, and the UI layer should be written display-agnostic so the swap
+is a driver change. If ADR-005 = Zephyr: a small custom ST7528 display driver
+(I2C, ~monochrome framebuffer) is needed — LVGL monochrome theme runs on it.

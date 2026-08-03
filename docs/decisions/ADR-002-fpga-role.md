@@ -1,6 +1,6 @@
 # ADR-002: Role of the FPGA in the acquisition chain
 
-**Status: OPEN — decision pending**
+**Status: DECIDED 2026-08-03 — Option A: keep the FPGA, full rewrite**
 **Implements in:** `LPWAN_Current_Logger_FW_FPGA` branch `ng` (if kept)
 
 ## Context
@@ -36,4 +36,14 @@ work (valid reason). If F7/H743 single-core is chosen, the FPGA (A) earns its pl
 
 ## Decision
 
-_(pending)_
+**Option A — keep the FPGA as the acquisition front-end, rewritten from scratch.**
+With the single-core F767 (ADR-001), the FPGA owns deterministic sampling,
+autonomous ranging and deep buffering. Requirements for the rewrite (branch `ng`
+in `LPWAN_Current_Logger_FW_FPGA`):
+
+- Testbench-first (iverilog/cocotb) — no untested RTL (defect F4)
+- Clock chosen to actually close timing (30 MHz until proven otherwise — defect F1)
+- Fix port directions (F2), route CONVST (F7), re-add the MCU command channel (F8)
+- MCU-link roles resolved: FPGA becomes SPI **slave** on the MCU port + data-ready
+  IRQ line; MCU (F767) is master — resolves defect T3
+- BRAM FIFO buffering (iCE40 LP8K: ~16 KB EBR) with explicit overflow policy
