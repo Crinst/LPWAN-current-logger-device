@@ -1,7 +1,7 @@
 # ADR-001: MCU platform for next-gen
 
-**Status: OPEN — decision pending**
-**Implements in:** firmware repo branch (see Decision), possibly new board rev in this repo
+**Status: DECIDED 2026-08-03 — Option A: keep STM32F767VIT6 on the V3 board**
+**Implements in:** `LPWAN_Current_Logger_FW_F7` branch `ng` (next-gen firmware)
 
 ## Context
 
@@ -35,4 +35,18 @@ Option B only if the V3 board becomes the long-term target.
 
 ## Decision
 
-_(pending)_
+**Option A — keep the STM32F767VIT6 on the existing V3 board.** No hardware
+changes; next-gen firmware (RTOS, LVGL, storage, networking) targets the proven
+board. Consequences:
+
+- Firmware work happens on branch `ng` in `LPWAN_Current_Logger_FW_F7`; legacy stays
+  on `main` for reference.
+- The ADC path must target the **ADS8910** actually fitted on V3 (`adc-chain.md`) —
+  not the ADS8691 path git's latest firmware uses.
+- 216 MHz / 512 KB RAM budget: LVGL uses partial render buffers (full 320×240×16bpp
+  framebuffer = 150 KB — possible but tight alongside RTOS heaps and DMA buffers).
+- Display must attach via free pins — SPI4 (PE12/13/14, freed from the vestigial
+  SD-SPI path) + spare GPIOs (PA0/PA3/PA15/PD3/PD4…) for DC/RST/CS/backlight. LTDC
+  is not reachable on this board (pins consumed).
+- H743 drop-in (Option B) remains a documented fallback if performance runs out —
+  near pin-compatible, same firmware with H7 HAL port.
