@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generováno Microsoft Visiem, export SVG Vyvojovy_diagram_sw_uart_pc.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="11.6929in" height="8.26772in"
+		viewBox="0 0 841.89 595.276" xml:space="preserve" color-interpolation-filters="sRGB" class="st10">
+	<v:documentProperties v:langID="1029" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(0):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#3c63ac;stroke:#31528f;stroke-width:0.75}
+		.st2 {fill:#feffff;font-family:Calibri;font-size:0.75em}
+		.st3 {font-size:1em}
+		.st4 {marker-end:url(#mrkr4-10);stroke:#4672c4;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st5 {fill:#4672c4;fill-opacity:1;stroke:#4672c4;stroke-opacity:1;stroke-width:0.28409090909091}
+		.st6 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st7 {fill:#000000;font-family:Calibri;font-size:0.75em;font-weight:bold}
+		.st8 {fill:#4672c4;stroke:#c8c8c8;stroke-width:0.25}
+		.st9 {fill:#ffffff;stroke:none;stroke-linecap:butt}
+		.st10 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend4">
+			<path d="M 2 1 L 0 0 L 2 -1 L 2 1 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr4-10" class="st5" v:arrowType="4" v:arrowSize="2" v:setback="7.04" refX="-7.04" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3.52,-3.52) "/>
+		</marker>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<v:userDefs>
+			<v:ud v:nameU="msvThemeOrder" v:val="VT0(0):26"/>
+		</v:userDefs>
+		<title>Stránka-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Vývojový diagram" v:index="0"/>
+		<v:layer v:name="Spojnice" v:index="1"/>
+		<g id="shape3-1" v:mID="3" v:groupContext="shape" v:layerMember="0" transform="translate(47.9666,-422.453)">
+			<title>Rozhodnutí.3</title>
+			<desc>Jsou data v Rx cyklickém bufferu?</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="48.553" cy="560.317" width="80.93" height="52.4373"/>
+			<path d="M0 560.32 L48.55 525.36 L97.11 560.32 L48.55 595.28 L0 560.32 Z" class="st1"/>
+			<text x="22.96" y="557.62" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Jsou data v Rx <tspan
+						x="13.97" dy="1.2em" class="st3">cyklickém bufferu?</tspan></text>		</g>
+		<g id="shape23-5" v:mID="23" v:groupContext="shape" v:layerMember="1" transform="translate(89.4331,-422.453)">
+			<title>Dynamická spojnice.23</title>
+			<desc>ANO</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="22.6772" cy="603.87" width="45" height="18.8036"/>
+			<path d="M7.09 595.28 L7.09 607.83" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="13.943" y="598.47" width="17.4683" height="10.7998" class="st6"/>
+			<text x="13.94" y="606.57" class="st7" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>ANO</text>		</g>
+		<g id="shape29-13" v:mID="29" v:groupContext="shape" v:layerMember="0" transform="translate(56.126,-510.236)">
+			<title>Začátek/konec</title>
+			<desc>Začátek přijímání dat z konzole</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="40.3937" cy="581.102" width="80.79" height="28.3465"/>
+			<path d="M14.17 595.28 L66.61 595.28 A14.1732 14.1732 -180 0 0 66.61 566.93 L14.17 566.93 A14.1732 14.1732 -180 1 0 14.17
+						 595.28 Z" class="st1"/>
+			<text x="9.04" y="578.4" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Začátek přijímání <tspan
+						x="16.35" dy="1.2em" class="st3">dat z konzole</tspan></text>		</g>
+		<g id="shape30-17" v:mID="30" v:groupContext="shape" v:layerMember="1" transform="translate(89.4331,-510.236)">
+			<title>Dynamická spojnice.30</title>
+			<path d="M7.09 595.28 L7.09 606.1" class="st4"/>
+		</g>
+		<g id="shape31-22" v:mID="31" v:groupContext="shape" v:layerMember="0" transform="translate(428.032,-510.236)">
+			<title>Začátek/konec.31</title>
+			<desc>Začátek obsluhy Tx cyklického bufferu</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="46.7717" cy="581.102" width="93.55" height="28.3465"/>
+			<path d="M14.17 595.28 L79.37 595.28 A14.1732 14.1732 -180 0 0 79.37 566.93 L14.17 566.93 A14.1732 14.1732 -180 1 0 14.17
+						 595.28 Z" class="st1"/>
+			<text x="12.19" y="578.4" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Začátek obsluhy Tx <tspan
+						x="13.13" dy="1.2em" class="st3">cyklického bufferu</tspan></text>		</g>
+		<g id="shape32-26" v:mID="32" v:groupContext="shape" v:layerMember="0" transform="translate(411.024,-395.858)">
+			<title>Rozhodnutí.32</title>
+			<desc>Jsou data odesláná na sériovou linku?</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="63.7795" cy="554.457" width="106.3" height="61.2283"/>
+			<path d="M0 554.46 L63.78 513.64 L127.56 554.46 L63.78 595.28 L0 554.46 Z" class="st1"/>
+			<text x="23.65" y="551.76" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Jsou data odesláná na <tspan
+						x="36.09" dy="1.2em" class="st3">sériovou linku?</tspan></text>		</g>
+		<g id="shape34-30" v:mID="34" v:groupContext="shape" v:layerMember="0" transform="translate(411.024,-298.223)">
+			<title>Rozhodnutí.34</title>
+			<desc>Jsou další data k odeslání v Tx cyklickém bufferu?</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="63.7795" cy="554.457" width="106.3" height="61.2283"/>
+			<path d="M0 554.46 L63.78 513.64 L127.56 554.46 L63.78 595.28 L0 554.46 Z" class="st1"/>
+			<text x="14.83" y="551.76" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Jsou další data k odeslání v <tspan
+						x="24.04" dy="1.2em" class="st3">Tx cyklickém bufferu?</tspan></text>		</g>
+		<g id="shape35-34" v:mID="35" v:groupContext="shape" v:layerMember="0" transform="translate(439.37,-239.706)">
+			<title>Proces.35</title>
+			<desc>Vložení dat k odeslání na sériovou linku.</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="35.4331" cy="574.016" width="70.87" height="42.5197"/>
+			<rect x="0" y="552.756" width="70.8661" height="42.5197" class="st8"/>
+			<text x="11.95" y="565.92" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Vložení dat k <tspan
+						x="14.57" dy="1.2em" class="st3">odeslání na </tspan><tspan x="8.7" dy="1.2em" class="st3">sériovou linku.</tspan></text>		</g>
+		<g id="shape36-39" v:mID="36" v:groupContext="shape" v:layerMember="1" transform="translate(467.717,-510.236)">
+			<title>Dynamická spojnice.36</title>
+			<path d="M7.09 595.28 L7.09 620.98" class="st4"/>
+		</g>
+		<g id="shape37-44" v:mID="37" v:groupContext="shape" v:layerMember="1" transform="translate(467.717,-395.858)">
+			<title>Dynamická spojnice.37</title>
+			<desc>ANO</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="24.93" cy="601.619" width="45" height="18.8036"/>
+			<path d="M7.09 595.28 L7.09 604.23" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="16.1958" y="596.219" width="17.4683" height="10.7998" class="st6"/>
+			<text x="16.2" y="604.32" class="st7" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>ANO</text>		</g>
+		<g id="shape39-51" v:mID="39" v:groupContext="shape" v:layerMember="1" transform="translate(411.024,-436.677)">
+			<title>Dynamická spojnice.39</title>
+			<desc>NE</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="-2.83465" cy="584.079" width="45" height="18.8036"/>
+			<path d="M0 595.28 L-10.63 595.28 L-10.63 800.79 L56.74 800.79" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="-7.99382" y="578.679" width="10.3184" height="10.7998" class="st6"/>
+			<text x="-7.99" y="586.78" class="st7" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>NE</text>		</g>
+		<g id="shape40-58" v:mID="40" v:groupContext="shape" v:layerMember="1" transform="translate(467.717,-298.223)">
+			<title>Dynamická spojnice.40</title>
+			<desc>ANO</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="24.93" cy="598.777" width="45" height="18.8036"/>
+			<path d="M7.09 595.28 L7.09 604.23" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="16.1958" y="593.378" width="17.4683" height="10.7998" class="st6"/>
+			<text x="16.2" y="601.48" class="st7" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>ANO</text>		</g>
+		<g id="shape41-65" v:mID="41" v:groupContext="shape" v:layerMember="0" transform="translate(531.496,-181.559)">
+			<title>Začátek/konec.41</title>
+			<desc>Konec obsluhy Tx cyklického bufferu.</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="40.3937" cy="581.102" width="80.79" height="28.3465"/>
+			<path d="M14.17 595.28 L66.61 595.28 A14.1732 14.1732 -180 0 0 66.61 566.93 L14.17 566.93 A14.1732 14.1732 -180 1 0 14.17
+						 595.28 Z" class="st1"/>
+			<text x="8.7" y="578.4" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Konec obsluhy Tx <tspan
+						x="5.62" dy="1.2em" class="st3">cyklického bufferu.</tspan></text>		</g>
+		<g id="shape42-69" v:mID="42" v:groupContext="shape" v:layerMember="1" transform="translate(538.583,-339.042)">
+			<title>Dynamická spojnice.42</title>
+			<desc>NE</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="9.40932" cy="582.822" width="45" height="18.8036"/>
+			<path d="M0 595.28 L33.31 595.28 L33.31 717.37" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="4.25014" y="577.422" width="10.3184" height="10.7998" class="st6"/>
+			<text x="4.25" y="585.52" class="st7" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>NE</text>		</g>
+		<g id="shape43-76" v:mID="43" v:groupContext="shape" v:layerMember="1" transform="translate(467.717,-239.706)">
+			<title>Dynamická spojnice.43</title>
+			<path d="M7.09 595.28 L7.09 610.95" class="st4"/>
+		</g>
+		<g id="shape51-81" v:mID="51" v:groupContext="shape" v:layerMember="0" transform="translate(51.3071,-208.712)">
+			<title>Rozhodnutí</title>
+			<desc>Byl přijat příkaz?</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="45.2126" cy="560.317" width="75.36" height="52.4373"/>
+			<path d="M0 560.32 L45.21 525.36 L90.43 560.32 L45.21 595.28 L0 560.32 Z" class="st1"/>
+			<text x="14.93" y="563.02" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Byl přijat příkaz?</text>		</g>
+		<g id="shape52-84" v:mID="52" v:groupContext="shape" v:layerMember="0" transform="translate(61.0866,-146.597)">
+			<title>Proces.4</title>
+			<desc>Vykonání příkazu.</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="35.4331" cy="574.016" width="70.87" height="42.5197"/>
+			<rect x="0" y="552.756" width="70.8661" height="42.5197" class="st8"/>
+			<text x="3.05" y="576.72" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Vykonání příkazu.</text>		</g>
+		<g id="shape54-87" v:mID="54" v:groupContext="shape" v:layerMember="1" transform="translate(89.4331,-208.712)">
+			<title>Dynamická spojnice.54</title>
+			<desc>ANO</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="22.6772" cy="603.114" width="45" height="18.8036"/>
+			<path d="M7.09 595.28 L7.09 607.83" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="13.943" y="597.714" width="17.4683" height="10.7998" class="st6"/>
+			<text x="13.94" y="605.81" class="st7" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>ANO</text>		</g>
+		<g id="shape57-94" v:mID="57" v:groupContext="shape" v:layerMember="0" transform="translate(592.724,-510.236)">
+			<title>Začátek/konec.57</title>
+			<desc>Začátek logování do konzole</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="46.7717" cy="581.102" width="93.55" height="28.3465"/>
+			<path d="M14.17 595.28 L79.37 595.28 A14.1732 14.1732 -180 0 0 79.37 566.93 L14.17 566.93 A14.1732 14.1732 -180 1 0 14.17
+						 595.28 Z" class="st1"/>
+			<text x="10.4" y="578.4" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Začátek logování do <tspan
+						x="32.57" dy="1.2em" class="st3">konzole</tspan></text>		</g>
+		<g id="shape58-98" v:mID="58" v:groupContext="shape" v:layerMember="0" transform="translate(584.504,-412.077)">
+			<title>Rozhodnutí.58</title>
+			<desc>Je volná kapacita v cyklické bufferu?</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="54.9921" cy="555.226" width="91.66" height="60.0742"/>
+			<path d="M0 555.23 L54.99 515.18 L109.98 555.23 L54.99 595.28 L0 555.23 Z" class="st1"/>
+			<text x="20.96" y="552.53" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Je volná kapacita v <tspan
+						x="24" dy="1.2em" class="st3">cyklické bufferu?</tspan></text>		</g>
+		<g id="shape59-102" v:mID="59" v:groupContext="shape" v:layerMember="1" transform="translate(141.732,-243.67)">
+			<title>Dynamická spojnice.59</title>
+			<desc>NE</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="7.84129" cy="583.827" width="45" height="18.8036"/>
+			<path d="M0 595.28 L10.63 595.28 L10.63 702.88 L-38.17 702.88" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="2.68211" y="578.428" width="10.3184" height="10.7998" class="st6"/>
+			<text x="2.68" y="586.53" class="st7" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>NE</text>		</g>
+		<g id="shape60-109" v:mID="60" v:groupContext="shape" v:layerMember="0" transform="translate(604.063,-349.956)">
+			<title>Proces.60</title>
+			<desc>Zápis dat do cyklické bufferu.</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="35.4331" cy="574.016" width="70.87" height="42.5197"/>
+			<rect x="0" y="552.756" width="70.8661" height="42.5197" class="st8"/>
+			<text x="13.21" y="571.32" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Zápis dat do <tspan
+						x="5.39" dy="1.2em" class="st3">cyklické bufferu.</tspan></text>		</g>
+		<g id="shape63-113" v:mID="63" v:groupContext="shape" v:layerMember="0" transform="translate(592.724,-280.225)">
+			<title>Začátek/konec.63</title>
+			<desc>Konec logování dat do konzole</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="46.7717" cy="581.102" width="93.55" height="28.3465"/>
+			<path d="M14.17 595.28 L79.37 595.28 A14.1732 14.1732 -180 0 0 79.37 566.93 L14.17 566.93 A14.1732 14.1732 -180 1 0 14.17
+						 595.28 Z" class="st1"/>
+			<text x="6.26" y="578.4" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Konec logování dat do <tspan
+						x="32.57" dy="1.2em" class="st3">konzole</tspan></text>		</g>
+		<g id="shape64-117" v:mID="64" v:groupContext="shape" v:layerMember="1" transform="translate(632.409,-510.236)">
+			<title>Dynamická spojnice.64</title>
+			<path d="M7.09 595.28 L7.09 606.3" class="st4"/>
+		</g>
+		<g id="shape65-122" v:mID="65" v:groupContext="shape" v:layerMember="1" transform="translate(632.409,-412.077)">
+			<title>Dynamická spojnice.65</title>
+			<desc>ANO</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="25.2283" cy="599.163" width="45" height="18.8036"/>
+			<path d="M7.09 595.28 L7.09 607.84" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="16.4942" y="593.763" width="17.4683" height="10.7998" class="st6"/>
+			<text x="16.49" y="601.86" class="st7" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>ANO</text>		</g>
+		<g id="shape73-129" v:mID="73" v:groupContext="shape" v:layerMember="1" transform="translate(694.488,-452.126)">
+			<title>Dynamická spojnice.73</title>
+			<desc>NE</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="2.6207" cy="588.189" width="45" height="18.8036"/>
+			<path d="M0 595.28 L63.78 595.28 L63.78 609.5" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="-2.53848" y="582.789" width="10.3184" height="10.7998" class="st9"/>
+			<text x="-2.54" y="590.89" class="st7" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>NE</text>		</g>
+		<g id="shape75-136" v:mID="75" v:groupContext="shape" v:layerMember="0" transform="translate(722.835,-382.677)">
+			<title>Proces.75</title>
+			<desc>Výpis varování o nedostatku kapacity sériové linky.</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.66929133858268):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="35.4331" cy="571.181" width="70.87" height="48.189"/>
+			<rect x="0" y="547.087" width="70.8661" height="48.189" class="st8"/>
+			<text x="5.56" y="557.68" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Výpis varování o <tspan
+						x="14.75" dy="1.2em" class="st3">nedostatku </tspan><tspan x="5.97" dy="1.2em" class="st3">kapacity sériové </tspan><tspan
+						x="25.78" dy="1.2em" class="st3">linky.</tspan></text>		</g>
+		<g id="shape76-142" v:mID="76" v:groupContext="shape" v:layerMember="1" transform="translate(758.268,-382.677)">
+			<title>Dynamická spojnice.76</title>
+			<path d="M0 595.28 L0 643.46 L-111.73 643.46" class="st4"/>
+		</g>
+		<g id="shape77-147" v:mID="77" v:groupContext="shape" v:layerMember="1" transform="translate(632.409,-349.956)">
+			<title>Dynamická spojnice.77</title>
+			<path d="M7.09 595.28 L7.09 629.62" class="st4"/>
+		</g>
+		<g id="shape78-152" v:mID="78" v:groupContext="shape" v:layerMember="0" transform="translate(439.37,-174.472)">
+			<title>Proces.78</title>
+			<desc>Odeslání dat na sériovou linku.</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="35.4331" cy="574.016" width="70.87" height="42.5197"/>
+			<rect x="0" y="552.756" width="70.8661" height="42.5197" class="st8"/>
+			<text x="6.92" y="571.32" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Odeslání dat na <tspan
+						x="8.7" dy="1.2em" class="st3">sériovou linku.</tspan></text>		</g>
+		<g id="shape79-156" v:mID="79" v:groupContext="shape" v:layerMember="1" transform="translate(481.89,-174.472)">
+			<title>Dynamická spojnice.79</title>
+			<path d="M-7.09 595.28 L-7.09 605.91 L-92.41 605.91 L-92.41 273.69 L-14.13 273.69" class="st4"/>
+		</g>
+		<g id="shape81-161" v:mID="81" v:groupContext="shape" v:layerMember="0" transform="translate(192.308,-510.236)">
+			<title>Začátek/konec.81</title>
+			<desc>Začátek obsluhy Rx cyklického bufferu</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="46.7717" cy="581.102" width="93.55" height="28.3465"/>
+			<path d="M14.17 595.28 L79.37 595.28 A14.1732 14.1732 -180 0 0 79.37 566.93 L14.17 566.93 A14.1732 14.1732 -180 1 0 14.17
+						 595.28 Z" class="st1"/>
+			<text x="11.94" y="578.4" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Začátek obsluhy Rx <tspan
+						x="13.13" dy="1.2em" class="st3">cyklického bufferu</tspan></text>		</g>
+		<g id="shape82-165" v:mID="82" v:groupContext="shape" v:layerMember="0" transform="translate(175.3,-412.601)">
+			<title>Rozhodnutí.82</title>
+			<desc>Jsou přijata data na sériové lince?</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="63.7795" cy="554.457" width="106.3" height="61.2283"/>
+			<path d="M0 554.46 L63.78 513.64 L127.56 554.46 L63.78 595.28 L0 554.46 Z" class="st1"/>
+			<text x="13.97" y="551.76" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Jsou přijata data na sériové <tspan
+						x="53.12" dy="1.2em" class="st3">lince?</tspan></text>		</g>
+		<g id="shape83-169" v:mID="83" v:groupContext="shape" v:layerMember="0" transform="translate(175.3,-314.966)">
+			<title>Rozhodnutí.83</title>
+			<desc>Je dostupná kapacity v Rx cyklickém bufferu?</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="63.7795" cy="554.457" width="106.3" height="61.2283"/>
+			<path d="M0 554.46 L63.78 513.64 L127.56 554.46 L63.78 595.28 L0 554.46 Z" class="st1"/>
+			<text x="17.16" y="551.76" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Je dostupná kapacity v Rx <tspan
+						x="29.2" dy="1.2em" class="st3">cyklickém bufferu?</tspan></text>		</g>
+		<g id="shape84-173" v:mID="84" v:groupContext="shape" v:layerMember="0" transform="translate(203.647,-256.449)">
+			<title>Proces.84</title>
+			<desc>Vložení dat do Rx cyklického bufferu.</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="35.4331" cy="574.016" width="70.87" height="42.5197"/>
+			<rect x="0" y="552.756" width="70.8661" height="42.5197" class="st8"/>
+			<text x="3.85" y="565.92" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Vložení dat do Rx <tspan
+						x="16.46" dy="1.2em" class="st3">cyklického </tspan><tspan x="20.65" dy="1.2em" class="st3">bufferu.</tspan></text>		</g>
+		<g id="shape85-178" v:mID="85" v:groupContext="shape" v:layerMember="1" transform="translate(231.993,-510.236)">
+			<title>Dynamická spojnice.85</title>
+			<path d="M7.09 595.28 L7.09 604.23" class="st4"/>
+		</g>
+		<g id="shape86-183" v:mID="86" v:groupContext="shape" v:layerMember="1" transform="translate(231.993,-412.601)">
+			<title>Dynamická spojnice.86</title>
+			<desc>ANO</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="24.93" cy="601.619" width="45" height="18.8036"/>
+			<path d="M7.09 595.28 L7.09 604.23" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="16.1958" y="596.219" width="17.4683" height="10.7998" class="st6"/>
+			<text x="16.2" y="604.32" class="st7" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>ANO</text>		</g>
+		<g id="shape87-190" v:mID="87" v:groupContext="shape" v:layerMember="1" transform="translate(175.3,-453.42)">
+			<title>Dynamická spojnice.87</title>
+			<desc>NE</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="-2.83465" cy="584.079" width="45" height="18.8036"/>
+			<path d="M0 595.28 L-10.63 595.28 L-10.63 800.79 L56.74 800.79" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="-7.99382" y="578.679" width="10.3184" height="10.7998" class="st6"/>
+			<text x="-7.99" y="586.78" class="st7" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>NE</text>		</g>
+		<g id="shape88-197" v:mID="88" v:groupContext="shape" v:layerMember="1" transform="translate(231.993,-314.966)">
+			<title>Dynamická spojnice.88</title>
+			<desc>ANO</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="24.93" cy="598.777" width="45" height="18.8036"/>
+			<path d="M7.09 595.28 L7.09 604.23" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="16.1958" y="593.378" width="17.4683" height="10.7998" class="st6"/>
+			<text x="16.2" y="601.48" class="st7" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>ANO</text>		</g>
+		<g id="shape89-204" v:mID="89" v:groupContext="shape" v:layerMember="1" transform="translate(302.86,-355.785)">
+			<title>Dynamická spojnice.89</title>
+			<desc>NE</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="2.92834" cy="582.822" width="45" height="18.8036"/>
+			<path d="M0 595.28 L30.21 595.28 L30.21 608.58" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="-2.23084" y="577.422" width="10.3184" height="10.7998" class="st6"/>
+			<text x="-2.23" y="585.52" class="st7" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>NE</text>		</g>
+		<g id="shape90-211" v:mID="90" v:groupContext="shape" v:layerMember="1" transform="translate(231.993,-256.449)">
+			<title>Dynamická spojnice.90</title>
+			<path d="M7.09 595.28 L7.09 611.29" class="st4"/>
+		</g>
+		<g id="shape93-216" v:mID="93" v:groupContext="shape" v:layerMember="0" transform="translate(297.638,-275.914)">
+			<title>Proces.93</title>
+			<desc>Výpis varování o nedostatku kapacity Rx cyklického bufferu.</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.82677165354331):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="35.4331" cy="565.512" width="70.87" height="59.5276"/>
+			<rect x="0" y="535.748" width="70.8661" height="59.5276" class="st8"/>
+			<text x="5.56" y="546.61" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Výpis varování o <tspan
+						x="14.75" dy="1.2em" class="st3">nedostatku </tspan><tspan x="14.82" dy="1.2em" class="st3">kapacity Rx </tspan><tspan
+						x="16.46" dy="1.2em" class="st3">cyklického </tspan><tspan x="20.65" dy="1.2em" class="st3">bufferu.</tspan></text>		</g>
+		<g id="shape94-223" v:mID="94" v:groupContext="shape" v:layerMember="0" transform="translate(192.308,-205.048)">
+			<title>Začátek/konec.94</title>
+			<desc>Konec obsluhy Rx cyklického bufferu</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="46.7717" cy="581.102" width="93.55" height="28.3465"/>
+			<path d="M14.17 595.28 L79.37 595.28 A14.1732 14.1732 -180 0 0 79.37 566.93 L14.17 566.93 A14.1732 14.1732 -180 1 0 14.17
+						 595.28 Z" class="st1"/>
+			<text x="14.83" y="578.4" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Konec obsluhy Rx <tspan
+						x="13.13" dy="1.2em" class="st3">cyklického bufferu</tspan></text>		</g>
+		<g id="shape95-227" v:mID="95" v:groupContext="shape" v:layerMember="1" transform="translate(333.071,-275.914)">
+			<title>Dynamická spojnice.95</title>
+			<path d="M0 595.28 L0 623.62 L-86.95 623.62" class="st4"/>
+		</g>
+		<g id="shape96-232" v:mID="96" v:groupContext="shape" v:layerMember="0" transform="translate(61.0866,-360.338)">
+			<title>Proces.96</title>
+			<desc>Vyčtení dat z Rx cyklického bufferu.</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="35.4331" cy="574.016" width="70.87" height="42.5197"/>
+			<rect x="0" y="552.756" width="70.8661" height="42.5197" class="st8"/>
+			<text x="6.55" y="565.92" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Vyčtení dat z Rx <tspan
+						x="16.46" dy="1.2em" class="st3">cyklického </tspan><tspan x="20.65" dy="1.2em" class="st3">bufferu.</tspan></text>		</g>
+		<g id="shape97-237" v:mID="97" v:groupContext="shape" v:layerMember="0" transform="translate(61.0866,-298.223)">
+			<title>Proces.97</title>
+			<desc>Zpracování dat.</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.59055118110236):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="35.4331" cy="574.016" width="70.87" height="42.5197"/>
+			<rect x="0" y="552.756" width="70.8661" height="42.5197" class="st8"/>
+			<text x="7.2" y="576.72" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Zpracování dat.</text>		</g>
+		<g id="shape99-240" v:mID="99" v:groupContext="shape" v:layerMember="1" transform="translate(89.4331,-360.338)">
+			<title>Dynamická spojnice.99</title>
+			<path d="M7.09 595.28 L7.09 607.83" class="st4"/>
+		</g>
+		<g id="shape100-245" v:mID="100" v:groupContext="shape" v:layerMember="1" transform="translate(89.4331,-298.223)">
+			<title>Dynamická spojnice.100</title>
+			<path d="M7.09 595.28 L7.09 607.83" class="st4"/>
+		</g>
+		<g id="shape101-250" v:mID="101" v:groupContext="shape" v:layerMember="0" transform="translate(56.126,-92.126)">
+			<title>Začátek/konec.101</title>
+			<desc>Konec přijímání dat z konzole</desc>
+			<v:custProps>
+				<v:cp v:nameU="Cost" v:lbl="Náklady" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="ProcessNumber" v:lbl="Číslo procesu" v:prompt="" v:type="2" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Owner" v:lbl="Owner" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Function" v:lbl="Funkce" v:prompt="" v:type="0" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0" v:val="VT4()"/>
+				<v:cp v:nameU="StartDate" v:lbl="Počáteční datum" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="EndDate" v:lbl="Datum ukončení" v:prompt="" v:type="5" v:format="" v:sortKey="" v:invis="false"
+						v:ask="false" v:langID="1029" v:cal="0"/>
+				<v:cp v:nameU="Status" v:lbl="Status" v:prompt="" v:type="4"
+						v:format=";Nezahájeno;Probíhá;Dokončeno;Odloženo;Čeká na vstup" v:sortKey="" v:invis="false" v:ask="false"
+						v:langID="1029" v:cal="0" v:val="VT4()"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="DefaultWidth" v:prompt="" v:val="VT0(0.98425196850394):24"/>
+				<v:ud v:nameU="DefaultHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+				<v:ud v:nameU="ResizeTxtHeight" v:prompt="" v:val="VT0(0.39370078740157):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="40.3937" cy="581.102" width="80.79" height="28.3465"/>
+			<path d="M14.17 595.28 L66.61 595.28 A14.1732 14.1732 -180 0 0 66.61 566.93 L14.17 566.93 A14.1732 14.1732 -180 1 0 14.17
+						 595.28 Z" class="st1"/>
+			<text x="2.1" y="578.4" class="st2" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>Konec přijímání dat z <tspan
+						x="26.19" dy="1.2em" class="st3">konzole</tspan></text>		</g>
+		<g id="shape102-254" v:mID="102" v:groupContext="shape" v:layerMember="1" transform="translate(89.4331,-146.597)">
+			<title>Dynamická spojnice.102</title>
+			<path d="M7.09 595.28 L7.09 614.36" class="st4"/>
+		</g>
+		<g id="shape103-259" v:mID="103" v:groupContext="shape" v:layerMember="1" transform="translate(47.9666,-457.411)">
+			<title>Dynamická spojnice.103</title>
+			<desc>NE</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="-2.61231" cy="582.136" width="45" height="18.8036"/>
+			<path d="M0 595.28 L-10.63 595.28 L-10.63 916.62 L41.51 916.62" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="-7.77149" y="576.736" width="10.3184" height="10.7998" class="st6"/>
+			<text x="-7.77" y="584.84" class="st7" v:langID="1029"><v:paragraph v:horizAlign="1"/><v:tabList/>NE</text>		</g>
+	</g>
+</svg>

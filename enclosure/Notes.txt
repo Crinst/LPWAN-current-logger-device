@@ -1,0 +1,7 @@
+Potřebný materiál cca 361 g, respektive 122 m filametu.
+Celkový tiskový čas přibližně 36 hodin.
+Pro tisk na Prusa MK3S s tryskou 0,4 mm.
+	Použít standardní profil 0,2 mm QUALITY.
+	Poté upravit počet perimetrů na 3.
+	
+Pro tisk Main_Body je nutné použít brim alespoň 5 mm, jinak hrozí, že se zvednou rohy krabičky.

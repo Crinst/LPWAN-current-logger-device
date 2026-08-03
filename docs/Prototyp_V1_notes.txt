@@ -1,0 +1,21 @@
+poznámky z prvnímu prototypu
+	TPL0102 musí být napájený 5VDC anebo musí být změněno řízení pro proud (čip umí současně max Vcc+0.3 tz 3,6VDC)
+	tranzistory na rozsahy spínají s docela velkým přechodovým odporem --> pokusit se najít lepší anebo je spínat skrze pomocný tranzistor z 5VDC větve popřípadě z Vcc větve
+		--> zvoleny P-MOS namísto N-MOS, proto vysoký úbytek napětí při sepnutí (dočasně použity TSM2302X s kterými je úbytek pod 0,01V)
+		pro uA rozsah sense odpor 10 ohm, celkový odpor mezi svorkami s tranzistorem 14,3-15 ohm, tz 4,3-5 ohm úbytek (nejmenší byl naměřený cca 2,3 ohm)
+		pro mA rozsah podobné výsledky jako uA ...
+		---> uA rozsah by mohl vystačit se současným, ale mA rozsah vyžaduje mnohem lepší tranzistor
+	přidat pomocné LED nebo komparator na napájecí kaskády pro lepší diagnostiku
+	--> podařilo se odpálit STM Nucleo - nejspíše špatné spínanání rozsahů a průchod ze zdroje, co napájí zátěž
+	
+	
+
+SW notes
+27.12.2019
+	TIM5 (32 bit)  === 1 us base
+		main timer for all timing during non blocking 
+	TIM4 (16 bit)  === 1 us base
+		delay function for fast operations
+	TIM1 and TIM 2  === FatFS framework reserved
+	
+	

@@ -1,0 +1,23 @@
+* C:\Users\Michal-Dell\Documents\LTspiceXVII\Draft2.asc
+R1 N004 N007 0,01
+R2 NC_01 N002 40K
+R3 N002 0 60K
+V1 VREF 0 2.5
+V2 N007 0 5
+XU1 N005 N003 N001 0 VSENSE LT1078
+V3 N001 0 5
+R5 N003 N004 2K
+R6 N005 N007 2K
+R7 0 N005 1Meg
+R8 VSENSE N003 1Meg
+XU2 VCONTR N006 N001 0 VOUT LT1078
+V4 VCONTR 0 2.8
+I1 VLOAD 0 0.8
+M1 VLOAD VOUT N004 N004 PMOS
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Michal-Dell\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0.1
+.lib LTC.lib
+.backanno
+.end

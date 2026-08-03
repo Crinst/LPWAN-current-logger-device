@@ -1,0 +1,65 @@
+zip archiv obsahuje kompletní gerber soubory pro výrobu PCB podle požadavku PCBWay - 4 vrstvé
+	6 mill min trace size, 6 mill trace izol., 0,35mm min drill, rozměr 100 x 100 mm přesně
+	
+	ve složce jsou přiloženy výstřižky na kterých je zobrazen výpis z eagle s parametry desky, navíc je přiložený vyplněný formulář pro objednání v portálu PCBWay
+	
+	
+	
+	0x1000 - hnedka po spanku, poslech pouze v paging intervalech
+	0x0000 - nasloucha 20 sec po odeslání svých dat
+	
+	SigFox -
+			Telis ---- Sigfox module LE51-868 S
+			STM ------ X-NUCLEO-S2868A1
+			
+			
+	PCB, komponent max 14 dní
+	
+	obecně základní info, 
+	
+	IEEE_WCNC_2020_v1.0.pdf
+	IEEE_ICC_2020_Sigfox.pdf nejsou zatím schváleny, neveřejné, nešířit, citovat ano
+	
+	
+do SEMP	
+deska, schemata, navrhy komponent
+	pseudokod
+	
+ve škole naměřit něco jako sinusovku
+rovnice z latex jde přesunout do wordu
+
+zvětšit font, zvetšit šiřku bodu jednotlivých (šířka čary)
+
+sigfox - do DP průběh s potvrzením uděláme
+
+LoRaWAN - bude s ACK, 12 B
+	power - SF - bajts - počet měření
+	
+překreslit obrázky lora, sigfox arch. ---> NUTNE
+
+SigFOx - informace o režimu --> vždy je stejná pro všechny 3 vysílaní, přestože by se mohla měnit
+
+průběhy proudu - krátce co, kde jak, kdy
+
+
+zjistit model NB-IoT modulu a parametry přenosu
+
+
+NB-IoT --> LTE Cat 0 --> asi ani neudávat (není potřeby pro účely práce)
+
+/// vytaženo z kapitoly NB-IoT - fyzická úvod
+Pro zařízení LTE kategorie 0 (Cat-0) byly stanoveny požadavky pouze na jednu komunikační anténou a prací pouze v polovičním duplexním režimu 
+(Half-duplex) s frekvenčním duplexem (FDD, Frequency Division Duplex). Zároveň tyto zařízení mají mít mnohem nižší přenosovou rychlost (pouze 1 Mb/s) s šířkou pásma 1,08 MHz (1,4 – 20 MHz). 
+V neposlední řadě při výrobě těchto zařízení bude kladen důraz na velmi nízkou cenu, proto tyto zařízení budou obsahovat pouze jediný oscilátor pro vysílací rádiový modul [14].
+// end vyjmuti
+
+// vyjmuto z kapitoly 3- měřeni proudu
+1.1	Převod Analog na digitál (ADC)
+Proč je potřeba ADC, co je převod ADC, 
+SAR (Successive Approximation Registry)
+Z čeho skládá (registry, dac, komparator), jak funguje, plus, mínus, běžné hodnoty rozlišení, rychlost samplování, na co vhodné
+
+Sigma delta
+Integrace – derivace
+Obecný popis základní funkce, plus, mínus, běžné hodnoty rozlišení, rychlosti samplování, na co vhodné
+// konec vyjmuti

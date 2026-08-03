@@ -1,0 +1,12 @@
+zip archiv obsahuje kompletní gerber soubory pro výrobu PCB podle požadavku PCBWay - 2 a 4 vrstvé technologie
+
+6 mill min trace size, 6 mill trace izol., 0,3mm min drill, rozměr max 100 x 100 mm
+	
+!!! pro desku DP_current_measure_v3 je nutné zvolit technologii 4 vrstev !!!
+!!! pro desku DP_current_measure_V3_extension je nutné zvolit pouze technologii 2 vrstev (zbylé 2 vnitřní vrstvy jsou prázdné a nepoužité) !!!
+
+pro 4 vrstvou desku vybrat 1,5 oz CU pro vnitřní vrstvy ==> nezvedne cenu, ale zlepší rozvod napájení a země
+surface finish: může být standardní HASL with lead nebo lead free (nerozhoduje o funkci)
+	
+dále byly přiloženy Eagle .sch a .brd soubory spolu s použitým CAM procesorem
+	
