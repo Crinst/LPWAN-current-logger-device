@@ -18,7 +18,7 @@ branches in the repo each decision points at.
 | [`known-defects.md`](baseline/known-defects.md) | Defect register across all legacy code (severity-rated, file:line) |
 | [`restore-test-plan.md`](baseline/restore-test-plan.md) | Phase-2 bench procedure to re-verify the 2021 hardware state |
 
-## `decisions/` — architecture decision records (all OPEN)
+## `decisions/` — architecture decision records
 
 | ADR | Decision |
 |---|---|
@@ -27,6 +27,7 @@ branches in the repo each decision points at.
 | [ADR-003](decisions/ADR-003-networking.md) | Native Ethernet vs ESP32 co-processor |
 | [ADR-004](decisions/ADR-004-display-lvgl.md) | Display hardware + LVGL integration path |
 | [ADR-005](decisions/ADR-005-rtos-toolchain.md) | RTOS choice and build toolchains |
+| [ADR-006](decisions/ADR-006-esp32-s3-hmi-future.md) | ESP32-S3 HMI/connectivity split (deferred) |
 
 Once an ADR is decided, record the decision in its file together with the repo +
 branch that implements it.
