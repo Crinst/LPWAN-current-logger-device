@@ -7,8 +7,9 @@ next-gen work builds on it. Everything needed is in `~/GIT/LPWAN_Current_Logger_
 
 - TinyFPGA BX
 - Nucleo-F401RE
-- ADS8691 board/EVM as used in 2021 (or skip ADC-side checks — the MCU link test
-  works without the ADC; packets then carry test-pattern bytes)
+- **v2 prototype board** (carries the ADS8691 — this is what the 2021 FPGA tests
+  used, dupont-wired), or skip ADC-side checks — the link framing test works
+  without the ADC; packets then carry test-pattern bytes
 - Jumper wires per the wiring table below; common GND
 
 ## Step 1 — Flash the preserved FPGA bitstream (do NOT rebuild first)
@@ -52,7 +53,7 @@ is tied high, burst 40-byte frames on the MCU port (~500 kHz SCLK on the Jan-202
 bitstream). Without an ADC, sample bytes are whatever MISO floats to — the framing
 and CS cadence are what you're verifying.
 
-**3c. (With ADS8691 EVM connected to the ADC port + a current source):** forcing the
+**3c. (With the v2 board's ADS8691 dupont-wired to the ADC port + a current source):** forcing the
 input across a range threshold must toggle range outputs PIN_14/15/16 (and inverted
 PIN_17/18/19). ⚠ Note the consolidated build never routes CONVST to PIN_13 (assign
 commented out) — check how the Jan-17 bitstream handles CONVST on the analyzer

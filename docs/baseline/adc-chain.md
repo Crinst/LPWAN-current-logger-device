@@ -5,7 +5,7 @@ confusion (they appear side by side in the firmware):
 
 | | ADS8691 | ADS8910B |
 |---|---|---|
-| Role | First choice, **rejected** for the V3 board (integrated anti-alias filter, few-kHz cutoff, distorted fast signals — thesis p. 41). Lived on as the **FPGA-experiment ADC** (separate eval setup, 2020–21) | **Final ADC on the V3 board** (thesis §3.1.3) |
+| Role | First choice, **rejected** for the V3 board (integrated anti-alias filter, few-kHz cutoff, distorted fast signals — thesis p. 41). Lived on as the **FPGA-experiment ADC**: the **v2 prototype board** (which carries the ADS8691) was dupont-wired to the TinyFPGA (2020–21) | **Final ADC on the V3 board** (thesis §3.1.3) |
 | Type | 18-bit SAR, 1 MSPS, single-ended, integrated AFE/ref | 18-bit SAR, 1 MSPS, fully differential, ±V_REF swing |
 | Firmware path | `adc_sample_ads8691()` — active in F7 git head (Sept 2021) and H7 CM4 | `adc_sample()` ("NEW ADC") — active in the Jul-2020 thesis-era snapshot |
 | Config used | register write `0xD0 14 00 0B` = WRITE → RANGE_SEL (0x14) = 0x0B (1.25×V_REF unidirectional) — used by FPGA + F7 `adc_config()` | thesis decoupling/ref network on V3 |

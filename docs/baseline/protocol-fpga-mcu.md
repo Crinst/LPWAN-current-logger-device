@@ -87,11 +87,12 @@ high) + PIN_17/18/19 (analog switches, inverted). Decision on **every** conversi
 40-byte `HAL_SPI_TransmitReceive_IT` per 500 ms loop, results printed on USART2
 @115200 (`Sending -- [0]…`, `Receive -- [0]…`).
 
-**Reconciliation:** the FPGA's MCU port is also a master → the two cannot have been
-wired as a matched pair. The F401RE program is an **MCU-side bring-up/loopback test**
-of the 40-byte framing + SPI + UART chain, not the other end of the FPGA link. The
-FPGA's verified counterpart (something acting as SPI *slave*) was never committed
-anywhere. Wire-level parameters agree (mode 0, 8-bit, MSB-first, 40 B frames) — only
+**Reconciliation (confirmed by the author, 2026-08-03):** the F401RE program was an
+**MCU-side bring-up/loopback test only**. The actual validated 2021 chain was:
+**v2 prototype board (ADS8691) ⇠dupont⇢ TinyFPGA BX ⇠dupont⇢ V3 board spare
+headers (JP12 area, F767)** — a wiring-level proof of concept; the F767-side
+receiving code was never committed. The FPGA's verified counterpart (something
+acting as SPI *slave*) therefore exists nowhere in git. Wire-level parameters agree (mode 0, 8-bit, MSB-first, 40 B frames) — only
 the roles conflict. **Next-gen decision: pick one master (recommend MCU master +
 FPGA slave port with data-ready IRQ line, the conventional arrangement).**
 
